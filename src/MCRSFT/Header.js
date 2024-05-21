@@ -2,7 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-const Header = () => {
+const Header = ({ productCount, companyCount }) => {
+    
     return (
         <nav className="navbar navbar-inverse">
             <div className="container-fluid">
@@ -17,8 +18,13 @@ const Header = () => {
                 <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
                         <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Company</a></li>
+                        <li>
+                            <a href="#">Product <span className="badge-circle">2</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Company <span className="badge-circle">3</span></a>
+                        </li>
+                        
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <ul className="nav navbar-nav navbar-right">

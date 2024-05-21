@@ -36,6 +36,16 @@
     transform: rotate(360deg);
   }
 } */
+/* Header.css */
+.badge-circle {
+  background-color: #313b3e;
+  border-radius: 50%;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-left: 5px;
+}
 
 .footer {
   background-color: #f8f8f8;
